@@ -7,17 +7,30 @@ import ReactDOM from 'react-dom';
 const initialState = `
 # HELLO, THIS IS AN LITTLE APPLICATION DESIGNED TO CONVERT MARKDOWN TO HTML
 
-#### I need to be honest with you, I was stuck for almost 15 hours, and when I solve the problem, I realized that the problem was not related to the code...
+## I need to be honest with you...
+
+#### I was stuck for almost 15 hours, and when I solve the problem, I realized that the problem was not related to the code.
 
 ![Sadgif](https://media0.giphy.com/media/7SF5scGB2AFrgsXP63/giphy.gif?cid=ecf05e47l1b047ojpqsah0n62qv2cs2bzl0gc3cja7eoprim&rid=giphy.gif&ct=g)
 
 The only problem that I had, was that my initial state for testing was **#HELLO** instead of **# HELLO**. Do you see the problem???
+\`<div>Inline code</div>\`
+
+\`\`\`
+const initialState = '#HELLO';
+\`\`\`
 
 ### IT WAS JUST AN SPACE BETWEEN THE "#" AND THE WORD!!!
 
-But, it's programming, you know? It's what writing code implies. Anyway, I'm really happy with this career. I'm  Carrera Programmer, and I'm planning to be the best developer that I ever dreamed of, and if you want to follow my journey, I left you the link to my GitHub profile
+But, it's programming, you know? It's what writing code implies. Anyway, I'm really happy with this career. I'm  Carrera Programmer, and I'm planning to be the best developer that I ever dreamed of, and if you want to follow my journey, I left you the link to my GitHub profile and my LinkedIn
 
-### [JUST HERE](https://github.com/carreraprogrammer)
+1. [Gihub](https://github.com/carreraprogrammer)
+2. [LinkedIn](https://www.linkedin.com/in/carreraprogrammer/)
+
+> I hope to see you later
+
+![Sadgif](https://pbs.twimg.com/tweet_video_thumb/DIAiuVMUMAAfF8v.jpg)
+
 `
 
 export default function Markdown (){
@@ -63,6 +76,6 @@ export default function Markdown (){
             />
           </section>
           <div  id="preview" dangerouslySetInnerHTML={{__html: marked(input)}}></div>
-        </section>
+      </section>
     )
 }
